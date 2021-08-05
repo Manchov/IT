@@ -1,0 +1,21 @@
+﻿@model ServiceNet.Models.ServiceViewModel;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Calculator</title>
+</head>
+<body>
+    @if (String.IsNullOrEmpty(Model.text))
+    {
+    <span>@Html.DisplayFor(m => m.operand1) @Html.DisplayFor(m => m.operator1) @Html.DisplayFor(m => m.operand2) -> @Html.DisplayFor(m => m.result)</span>
+    }
+    else
+    @Html.DisplayFor(m => m.text)
+</body>
+</html>

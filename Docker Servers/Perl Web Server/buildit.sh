@@ -1,0 +1,1 @@
+docker build --no-cache -t markom/zad1 .

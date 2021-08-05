@@ -1,0 +1,1 @@
+docker run --name zad1kon --privileged  --mount type=bind,source="$(pwd)"/htdocs,target=/usr/local/apache2/htdocs  -p 8080:80 -d markom/zad1

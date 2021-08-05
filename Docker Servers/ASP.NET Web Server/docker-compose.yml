@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  servicenet:
+    image: ${DOCKER_REGISTRY-}servicenet
+    build:
+      context: .
+      dockerfile: Dockerfile
